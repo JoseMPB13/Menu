@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juguetería Mágica</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-color: aliceblue; /* Azul claro para el fondo */
+            color: rgb(51, 51, 51);
+        }
+
+        /* Estilos para el menú vertical */
+        nav {
+            width: 220px;
+            background-color: dodgerblue; /* Azul más oscuro para el menú */
+            padding: 20px;
+            height: 100vh;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-bottom: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: royalblue;
+        }
+
+        /* Estilos para el contenido principal */
+        main {
+            flex: 1;
+            padding: 40px;
+            overflow-y: auto;
+        }
+
+        h1 {
+            color: dodgerblue;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: royalblue;
+            border-bottom: 2px solid royalblue;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        /* Estilos para la lista de juguetes */
+        #juguetes ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        #juguetes li {
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            flex: 1 1 200px;
+            text-align: center;
+        }
+
+        #juguetes li:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Estilos para la sección de ofertas */
+        #ofertas {
+            background-color: gold;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        #ofertas h2 {
+            color: darkgray;
+            border-bottom: none;
+        }
+
+        /* Estilos para la sección de contacto */
+        #contacto {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Estilos para el nuevo menú horizontal */
+        #menu-horizontal {
+            background-color: royalblue;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        #menu-horizontal ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        #menu-horizontal li {
+            margin: 0 15px;
+        }
+
+        #menu-horizontal a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        #menu-horizontal a:hover {
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Menú vertical -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">🏠 Inicio</a></li>
+            <li><a href="#juguetes">🧸 Juguetes</a></li>
+            <li><a href="#ofertas">🎉 Ofertas</a></li>
+            <li><a href="#contacto">📞 Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Nuevo menú horizontal -->
+        <div id="menu-horizontal">
+            <ul>
+                <li><a href="#novedades">Novedades</a></li>
+                <li><a href="#categorias">Categorías</a></li>
+                <li><a href="#marcas">Marcas</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+        </div>
+
+        <h1>Bienvenidos a Juguetería Mágica</h1>
+        
+        <!-- Sección de inicio -->
+        <section id="inicio">
+            <h2>Descubre la magia de jugar</h2>
+            <p>En Juguetería Mágica encontrarás los mejores juguetes para todas las edades. Nuestra misión es traer alegría y diversión a cada hogar.</p>
+        </section>
+
+        <!-- Sección de juguetes -->
+        <section id="juguetes">
+            <h2>Nuestros Juguetes</h2>
+            <ul>
+                <li>Muñecas</li>
+                <li>Coches</li>
+                <li>Juegos de mesa</li>
+                <li>Peluches</li>
+            </ul>
+        </section>
+
+        <!-- Sección de ofertas -->
+        <section id="ofertas">
+            <h2>Ofertas Especiales</h2>
+            <p>¡No te pierdas nuestras increíbles ofertas! Descuentos de hasta el 50% en juguetes seleccionados.</p>
+        </section>
+
+        <!-- Sección de contacto -->
+        <section id="contacto">
+            <h2>Contáctanos</h2>
+            <p>📞 Teléfono: 123-456-789</p>
+            <p>✉️ Email: info@jugueteriamagica.com</p>
+            <p>🏬 Dirección: Calle de los Sueños, 123, Ciudad Feliz</p>
+        </section>
+    </main>
+</body>
+</html>
